@@ -47,8 +47,9 @@ class AbstractUploader:
         try:
             parsed = self.parsed
             if not parsed:
-                raise Exception()
-        except:
+                raise RuntimeError('Failed to upload')
+        except Exception as ex:
             print(self.request.text)
-            raise RuntimeError('Failed to upload')
+            raise ex
+
         return parsed
