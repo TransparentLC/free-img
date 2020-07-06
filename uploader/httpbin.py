@@ -19,5 +19,5 @@ class Uploader(AbstractUploader):
 
     @property
     def parsed(self) -> str:
-        print('Hint: This upload server is used for test!')
+        # print('Hint: This upload server is used for test!')
         return json.loads(self.request.text)['url']
