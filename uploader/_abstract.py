@@ -37,7 +37,8 @@ class AbstractUploader:
                 data=self.form,
                 headers={
                     'User-Agent': 'curl/7.71.0',
-                }
+                },
+                allow_redirects=False
             )
         r.encoding = 'utf-8'
         r.raise_for_status()
