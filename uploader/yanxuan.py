@@ -1,8 +1,8 @@
 import json
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class YanxuanUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://you.163.com/xhr/file/upload.json'

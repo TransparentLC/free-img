@@ -1,8 +1,8 @@
 import json
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class ToutiaoUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://mp.toutiao.com/upload_photo/?type=json'

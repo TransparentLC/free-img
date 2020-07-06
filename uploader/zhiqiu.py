@@ -1,8 +1,8 @@
 import json
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class ZhiqiuUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://zhiqiu.baidu.com/imcswebchat/api/file/upload'

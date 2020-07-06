@@ -1,8 +1,8 @@
 import json
 
-from _abstract import AbstractUploader
+from uploader._abstract import AbstractUploader
 
-class QhimgUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://st.so.com/stu'

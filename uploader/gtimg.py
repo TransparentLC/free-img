@@ -1,8 +1,8 @@
 import json
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class GtimgUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://om.qq.com/image/orginalupload'
@@ -14,6 +14,3 @@ class GtimgUploader(AbstractUploader):
     @property
     def parsed(self) -> str:
         return json.loads(self.request.text)['data']['url'].replace('http://', 'https://')
-
-
-print(GtimgUploader(r"C:\Users\Admin\Desktop\J9qzRJx_2.jpg").upload())

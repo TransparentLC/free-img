@@ -1,8 +1,8 @@
 import json
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class ChangyanUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://changyan.sohu.com/api/2/comment/attachment'

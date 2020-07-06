@@ -1,9 +1,9 @@
 import json
 import random
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class JdUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://myjd.jd.com/afs/common/upload.action'

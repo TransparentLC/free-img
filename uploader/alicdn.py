@@ -1,9 +1,9 @@
 import json
 import os
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 
-class AlicdnUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://kfupload.alibaba.com/mupload'
@@ -25,5 +25,3 @@ class AlicdnUploader(AbstractUploader):
     @property
     def parsed(self) -> str:
         return json.loads(self.request.text)['url']
-
-print(AlicdnUploader(r"C:\Users\Admin\Desktop\J9qzRJx_2.jpg").upload())

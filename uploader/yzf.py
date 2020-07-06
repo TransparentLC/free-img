@@ -1,10 +1,10 @@
 import json
 import random
 
-from _abstract import AbstractUploader
+from uploader import AbstractUploader
 from urllib.parse import unquote
 
-class YzfUploader(AbstractUploader):
+class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
         return 'https://yzf.qq.com/fsnb/kf-file/upload_wx_media'
