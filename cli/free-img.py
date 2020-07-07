@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import glob
 import os
 import sys
 
@@ -23,7 +24,7 @@ parser.add_argument(
     type=str,
     nargs='+',
     required=True,
-    help='The path of the image file to upload.'
+    help='The path of image(s) to upload. Globbing is supported.'
 )
 parser.add_argument(
     '-s',
@@ -52,8 +53,11 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-max_length = max(map(lambda x: len(os.path.basename(x)), args.input))
-for i in args.input:
+files = [glob.glob(x) for x in args.input]
+files = [item for sublist in files for item in sublist]
+max_length = max(map(lambda x: len(os.path.basename(x)), files))
+
+for i in files:
     name = os.path.basename(i)
     formatter = result_formatter[args.format]
 
