@@ -27,7 +27,7 @@ class AbstractUploader:
     def parsed(self) -> str:
         return self.request.text
 
-    def upload(self):
+    def upload(self) -> str:
         with open(self.path, 'rb') as f:
             r = requests.post(
                 url=self.request_url,

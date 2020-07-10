@@ -1,6 +1,6 @@
 import json
 
-from uploader._abstract import AbstractUploader
+from uploader import AbstractUploader
 
 class Uploader(AbstractUploader):
     @property

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 import argparse
 import glob
@@ -24,7 +24,7 @@ parser.add_argument(
     type=str,
     nargs='+',
     required=True,
-    help='The path of image(s) to upload. Globbing is supported.'
+    help='The path of image(s) to upload.'
 )
 parser.add_argument(
     '-s',
@@ -51,10 +51,21 @@ parser.add_argument(
     action='store_true',
     help='Raw output.'
 )
+parser.add_argument(
+    '-g',
+    '--glob',
+    dest='glob',
+    action='store_true',
+    help='Use glob on the image\'s path.'
+)
 args = parser.parse_args()
 
-files = [glob.glob(x) for x in args.input]
-files = [item for sublist in files for item in sublist]
+if args.glob:
+    files = [glob.glob(x) for x in args.input]
+    files = [item for sublist in files for item in sublist]
+else:
+    files = args.input
+
 max_length = max(map(lambda x: len(os.path.basename(x)), files))
 
 for i in files:
@@ -67,8 +78,7 @@ for i in files:
     try:
         url = Uploader.get(args.server, i).upload()
     except Exception as ex:
-        # url = f'\033[91m{type(ex).__name__}\033[39m \033[93m{ex}\033[39m'
-        url = '\033[91mFailed to upload\033[39m'
+        url = f'\033[91m{type(ex).__name__}\033[39m \033[93m{ex}\033[39m'
         formatter = result_formatter['plain']
 
     result = formatter(url, name)
