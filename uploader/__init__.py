@@ -1,4 +1,5 @@
 import os
+import random
 import requests
 
 from abc import abstractmethod
@@ -37,6 +38,7 @@ class AbstractUploader:
                 data=self.form,
                 headers={
                     'User-Agent': 'curl/7.71.0',
+                    'X-Forwarded-For': '.'.join([str(random.randint(0, 255)) for x in range(4)]),
                 },
                 allow_redirects=False
             )
