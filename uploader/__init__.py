@@ -33,7 +33,7 @@ class AbstractUploader:
             r = requests.post(
                 url=self.request_url,
                 files={
-                    self.file_key: (os.path.basename(f.name), f, MimeTypes().guess_type(f.name)[0]),
+                    self.file_key: (os.path.basename(f.name), f, MimeTypes().guess_type(f.name)[0] or 'image/jpeg'),
                 },
                 data=self.form,
                 headers={

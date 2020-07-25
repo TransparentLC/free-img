@@ -15,11 +15,11 @@ class Uploader(AbstractUploader):
     @property
     def form(self) -> dict:
         ext = os.path.splitext(self.path)[1]
-        if ext.lower() not in ['jpg', 'jpeg', 'gif', 'png']:
-            ext = 'jpg'
+        if ext.lower() not in ['.jpg', '.jpeg', '.gif', '.png']:
+            ext = '.jpg'
         return {
             'scene': 'productImageRule',
-            'name': f'image.{ext}'
+            'name': f'image{ext}'
         }
 
     @property

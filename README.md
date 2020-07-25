@@ -10,7 +10,7 @@ image.jpg -> https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg
 [root@localhost free-img]# cli/free-img.py -i image.jpg -s toutiao -f markdown
 image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 [root@localhost free-img]# cli/free-img.py -i image.jpg -s zhidao -f html -r
-<img alt="image" src="https://iknow-pic.cdn.bcebos.com/060828381f30e9242a16d04c5c086e061d95f719">
+<img alt="image.jpg" src="https://iknow-pic.cdn.bcebos.com/060828381f30e9242a16d04c5c086e061d95f719">
 ```
 
 ## 命令行参数
@@ -35,11 +35,14 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
 | baike | [bkimg.cnd.bcebos.com](https://bkimg.cdn.bcebos.com/pic/b3119313b07eca806538c935186a80dda144ac342585) |
 | gtimg | [inews.gtimg.com](https://inews.gtimg.com/newsapp_ls/0/12067385341/0) |
+| imgurl | [ftp.bmp.ovh](https://ftp.bmp.ovh/imgs/2020/07/ac7d08cb701789e9.jpg) |
 | jd | [img*.360buyimg.com](https://img20.360buyimg.com/myjd/jfs/t1/128109/13/6838/65846/5f086444E1dc00680/b977b3bace25c778.jpg) |
 | meituan | [img.meituan.net](https://img.meituan.net/csc/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | mi | [shop.io.mi-img.com](https://shop.io.mi-img.com/app/shop/img?id=shop_32d650f5ac7d08cb701789e98c5bdead.jpeg) |
 | qhimg | [ps.ssl.qhmsg.com](https://ps.ssl.qhmsg.com/t02ac7d08cb701789e9.jpg) |
 | toutiao | [p.pstatp.com](https://p.pstatp.com/origin/fe960003179ab14c66f8) |
+| uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
+| vimcn | [img.vim-cn.com](https://img.vim-cn.com/e0/4ff0a2859a3a13d327c3de0c73a38b0ebaa80a.jpg) |
 | yanxuan | [yanxuan.nosdn.127.net](https://yanxuan.nosdn.127.net/2edd1a783bd5ac276189504d4014dd34.jpg) |
 | yidianzixun | [si1.go2yd.com](https://si1.go2yd.com/get-image/0iFKu4YVCsK) |
 | yzf | [yzf.qq.com](https://yzf.qq.com/fsnb/kf-file/kf_pic/20200710/KFPIC_hF_WXIMAGE_MihOPneDLPHDtWHTTCdH.jpg) |
