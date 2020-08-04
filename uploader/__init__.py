@@ -1,9 +1,11 @@
 import os
+import mimetypes
 import random
 import requests
 
 from abc import abstractmethod
-from mimetypes import MimeTypes
+
+mimetypes.add_type('image/avif', '.avif')
 
 class AbstractUploader:
     def __init__(self, path: str) -> str:
@@ -33,7 +35,7 @@ class AbstractUploader:
             r = requests.post(
                 url=self.request_url,
                 files={
-                    self.file_key: (os.path.basename(f.name), f, MimeTypes().guess_type(f.name)[0] or 'image/jpeg'),
+                    self.file_key: (os.path.basename(f.name), f, mimetypes.guess_type(f.name)[0] or 'image/jpeg'),
                 },
                 data=self.form,
                 headers={
