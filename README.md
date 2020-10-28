@@ -51,7 +51,9 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | ~~httpbin~~ | 仅用于测试 |
 
 > 测试用图片的出处：[Pixiv ID #72467059](https://www.pixiv.net/artworks/72467059)
+>
 > <sup>\*</sup> 支持 WebP
+>
 > <sup>\*\*</sup> 支持 AVIF
 
 </details>

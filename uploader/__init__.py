@@ -30,6 +30,10 @@ class AbstractUploader:
     def parsed(self) -> str:
         return self.request.text
 
+    @property
+    def headers(self) -> dict:
+        return {}
+
     def upload(self) -> str:
         with open(self.path, 'rb') as f:
             r = requests.post(
@@ -39,8 +43,11 @@ class AbstractUploader:
                 },
                 data=self.form,
                 headers={
-                    'User-Agent': 'curl/7.71.0',
-                    'X-Forwarded-For': '.'.join([str(random.randint(0, 255)) for x in range(4)]),
+                    **{
+                        'User-Agent': 'curl/7.73.0',
+                        'X-Forwarded-For': '.'.join([str(random.randint(0, 255)) for x in range(4)]),
+                    },
+                    **self.headers,
                 },
                 allow_redirects=False
             )
