@@ -25,3 +25,9 @@ class Uploader(AbstractUploader):
     @property
     def parsed(self) -> str:
         return json.loads(self.request.text)['url']
+
+    @property
+    def headers(self) -> dict:
+        return {
+            'User-Agent': 'iAliexpress/6.22.1 (iPhone; iOS 12.1.2; Scale/2.00)',
+        }
