@@ -34,18 +34,21 @@ class AbstractUploader:
     def headers(self) -> dict:
         return {}
 
+    def filename_rewrite(self, filename: str) -> str:
+        return filename
+
     def upload(self) -> str:
         with open(self.path, 'rb') as f:
             r = requests.post(
                 url=self.request_url,
                 files={
-                    self.file_key: (os.path.basename(f.name), f, mimetypes.guess_type(f.name)[0] or 'image/jpeg'),
+                    self.file_key: (self.filename_rewrite(os.path.basename(f.name)), f, mimetypes.guess_type(self.filename_rewrite(f.name))[0] or 'image/jpeg'),
                 },
                 data=self.form,
                 headers={
                     **{
-                        'User-Agent': 'curl/7.73.0',
-                        'X-Forwarded-For': '.'.join([str(random.randint(0, 255)) for x in range(4)]),
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+                        'X-Forwarded-For': '.'.join(str(random.randint(0, 255)) for x in range(4)),
                     },
                     **self.headers,
                 },

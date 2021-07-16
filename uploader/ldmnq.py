@@ -5,7 +5,7 @@ from uploader import AbstractUploader
 class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
-        return 'https://chat.dianping.com/upload'
+        return 'https://bbs.ldmnq.com/api/bbs/upload?dir=topic/attachment'
 
     @property
     def file_key(self) -> str:
@@ -13,4 +13,4 @@ class Uploader(AbstractUploader):
 
     @property
     def parsed(self) -> str:
-        return json.loads(self.request.text)['path']
+        return json.loads(self.request.text)['data']['data'][0]

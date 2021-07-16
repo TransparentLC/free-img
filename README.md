@@ -31,19 +31,19 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 
 | 名称 | 上传后的 URL |
 | --- | --- |
-| alicdn <sup>\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
+| alicdn <sup>\*</sup> <sup>\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
 | baike | [bkimg.cdn.bcebos.com](https://bkimg.cdn.bcebos.com/pic/b3119313b07eca806538c935186a80dda144ac342585) |
+| dianping <sup>\*</sup> <sup>\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/csc/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | dingyue | [dingyue.ws.126.net](https://dingyue.ws.126.net/2020/1028/32d650f5j00qiw1ok001sd000go00gop.jpg) |
 | gtimg | [inews.gtimg.com](https://inews.gtimg.com/newsapp_ls/0/12067385341/0) |
 | imgurl <sup>\*</sup> | [ftp.bmp.ovh](https://ftp.bmp.ovh/imgs/2020/07/ac7d08cb701789e9.jpg) |
 | jd | [img*.360buyimg.com](https://img20.360buyimg.com/myjd/jfs/t1/128109/13/6838/65846/5f086444E1dc00680/b977b3bace25c778.jpg) |
-| meituan | [img.meituan.net](https://img.meituan.net/csc/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
-| mi | [shop.io.mi-img.com](https://shop.io.mi-img.com/app/shop/img?id=shop_32d650f5ac7d08cb701789e98c5bdead.jpeg) |
-| toutiao | [p.pstatp.com](https://p.pstatp.com/origin/fe960003179ab14c66f8) |
+| ldmnq <sup>\*</sup> <sup>\*\*</sup> | [ldbbs.ldmnq.com](https://ldbbs.ldmnq.com/bbs/topic/attachment/2021-7/9287ebd6-df0b-428e-8a6f-703f328d3482.jpg) |
+| maoyan <sup>\*</sup> <sup>\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/mmdb/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
+| oppo | [cdofs.oppomobile.com](https://cdofs.oppomobile.com/cdo-portal/feedback/202107/16/9715e4b42dfc721dfa437bf597b834ce.jpg) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
 | vimcn <sup>\*</sup> | [img.vim-cn.com](https://img.vim-cn.com/e0/4ff0a2859a3a13d327c3de0c73a38b0ebaa80a.jpg) |
-| yanxuan | [yanxuan.nosdn.127.net](https://yanxuan.nosdn.127.net/2edd1a783bd5ac276189504d4014dd34.jpg) |
 | yidianzixun <sup>\*</sup> | [si1.go2yd.com](https://si1.go2yd.com/get-image/0iFKu4YVCsK) |
 | yzf | [yzf.qq.com](https://yzf.qq.com/fsnb/kf-file/kf_pic/20200710/KFPIC_hF_WXIMAGE_MihOPneDLPHDtWHTTCdH.jpg) |
 | zhidao | [iknow-pic.cdn.bcebos.com](https://iknow-pic.cdn.bcebos.com/060828381f30e9242a16d04c5c086e061d95f719) |
@@ -55,6 +55,8 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 > <sup>\*</sup> 支持 WebP
 >
 > <sup>\*\*</sup> 支持 AVIF
+>
+> 部分图床可能存在图片强制二压的现象，部分图床可以上传任意格式的文件。
 
 </details>
 
@@ -96,9 +98,15 @@ class Uploader(AbstractUploader):
 
     # 自定义请求头
     # 将会合并/覆盖以下默认请求头：
-    # { 'User-Agent': （某个 curl 版本的 UA）, 'X-Forwarded-For': （随机的 IP 地址） }
+    # { 'User-Agent': （IE11 的 UA）, 'X-Forwarded-For': （随机的 IP 地址） }
     @property
     def headers(self) -> dict:
+        pass
+
+    # 在上传时返回重写的文件名
+    # 某些图床只检查扩展名而不是从文件内容中检查格式，这时就可以通过重写文件名来绕过检查
+    # 例如：在这里将一张 webp 图片的扩展名改为 jpg 并返回，在某些图床即可正常上传
+    def filename_rewrite(self, filename: str) -> str:
         pass
 
     # 返回图片上传后的 URL
