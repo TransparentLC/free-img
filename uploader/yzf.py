@@ -1,5 +1,5 @@
-import json
 import random
+import string
 
 from uploader import AbstractUploader
 from urllib.parse import unquote
@@ -15,8 +15,7 @@ class Uploader(AbstractUploader):
 
     @property
     def form(self) -> dict:
-        chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-        userid = list(map(lambda x: random.choice(chars), range(18)))
+        userid = list(map(lambda x: random.choice(string.ascii_letters + string.digits), range(18)))
         userid[15] += '_'
         userid = f'kf{"".join(userid)}'
         return {
@@ -27,4 +26,4 @@ class Uploader(AbstractUploader):
 
     @property
     def parsed(self) -> str:
-        return unquote(json.loads(self.request.text)['KfPicUrl']).split('?')[0]
+        return unquote(self.request.json()['KfPicUrl']).split('?')[0]

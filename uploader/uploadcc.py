@@ -1,5 +1,3 @@
-import json
-
 from uploader import AbstractUploader
 
 class Uploader(AbstractUploader):
@@ -13,4 +11,4 @@ class Uploader(AbstractUploader):
 
     @property
     def parsed(self) -> str:
-        return f'https://upload.cc/{json.loads(self.request.text)["success_image"][0]["url"]}'
+        return f'https://upload.cc/{self.request.json()["success_image"][0]["url"]}'

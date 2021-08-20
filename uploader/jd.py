@@ -1,4 +1,3 @@
-import json
 import random
 
 from uploader import AbstractUploader
@@ -20,4 +19,4 @@ class Uploader(AbstractUploader):
 
     @property
     def parsed(self) -> str:
-        return f'https://img{random.choice([1, *range(10, 15), 20, 30])}.360buyimg.com/myjd/{json.loads(self.request.text)["optDescription"]}'
+        return f'https://img{random.choice((1, *range(10, 15), 20, 30))}.360buyimg.com/myjd/{self.request.json()["optDescription"]}'

@@ -31,6 +31,7 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 
 | 名称 | 上传后的 URL |
 | --- | --- |
+| aichat <sup>\*</sup> <sup>\*\*</sup> | [static.aichat.net](https://static.aichat.net/chat/202108/205d94f2-40e0-49db-b738-75e5d9d68653.jpg) |
 | alicdn <sup>\*</sup> <sup>\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
 | baike | [bkimg.cdn.bcebos.com](https://bkimg.cdn.bcebos.com/pic/b3119313b07eca806538c935186a80dda144ac342585) |
@@ -42,8 +43,9 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | ldmnq <sup>\*</sup> <sup>\*\*</sup> | [ldbbs.ldmnq.com](https://ldbbs.ldmnq.com/bbs/topic/attachment/2021-7/9287ebd6-df0b-428e-8a6f-703f328d3482.jpg) |
 | maoyan <sup>\*</sup> <sup>\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/mmdb/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | oppo | [cdofs.oppomobile.com](https://cdofs.oppomobile.com/cdo-portal/feedback/202107/16/9715e4b42dfc721dfa437bf597b834ce.jpg) |
+| sogou | [img*.sogoucdn.com](https://img01.sogoucdn.com/app/a/100520146/32d650f5ac7d08cb701789e98c5bdead) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
-| vimcn <sup>\*</sup> | [img.vim-cn.com](https://img.vim-cn.com/e0/4ff0a2859a3a13d327c3de0c73a38b0ebaa80a.jpg) |
+| wenku | [wkphoto.cdn.bcebos.com](https://wkphoto.cdn.bcebos.com/fcfaaf51f3deb48fd81fbabce01f3a292df57859.jpg) |
 | yidianzixun <sup>\*</sup> | [si1.go2yd.com](https://si1.go2yd.com/get-image/0iFKu4YVCsK) |
 | yzf | [yzf.qq.com](https://yzf.qq.com/fsnb/kf-file/kf_pic/20200710/KFPIC_hF_WXIMAGE_MihOPneDLPHDtWHTTCdH.jpg) |
 | zhidao | [iknow-pic.cdn.bcebos.com](https://iknow-pic.cdn.bcebos.com/060828381f30e9242a16d04c5c086e061d95f719) |
@@ -56,7 +58,11 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 >
 > <sup>\*\*</sup> 支持 AVIF
 >
-> 部分图床可能存在图片强制二压的现象，部分图床可以上传任意格式的文件。
+> 部分图床还可能存在以下特性：
+>
+> * 对图片进行二压，可能的条件包括但不限于：图片尺寸/大小超过一定范围、上传后超过一段时间、访问时存在响应头 `Accept: image/webp, ...`、无条件二压……
+> * 通过修改扩展名而不修改文件内容，可以上传任意格式的文件
+> * 支持 CORS，访问上传后的图片 URL 时可以给出 `Access-Control-Allow-Origin: *` 的响应头
 
 </details>
 

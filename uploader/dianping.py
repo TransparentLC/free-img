@@ -1,4 +1,3 @@
-import json
 import random
 import os
 import string
@@ -25,7 +24,7 @@ class Uploader(AbstractUploader):
 
     @property
     def parsed(self) -> str:
-        return json.loads(self.request.text)['data']['uploadPath'].replace('http://', 'https://').replace('s3plus.meituan.net:80', 's3plus.meituan.net')
+        return self.request.json()['data']['uploadPath'].replace('http://', 'https://').replace('s3plus.meituan.net:80', 's3plus.meituan.net')
 
     @property
     def headers(self) -> dict:
@@ -34,6 +33,6 @@ class Uploader(AbstractUploader):
         }
 
     def filename_rewrite(self, filename: str) -> str:
-        if os.path.splitext(filename.lower())[1] in ('.webp', '.avif'):
+        if os.path.splitext(filename.lower())[1] in {'.webp', '.avif'}:
             filename += '.jpg'
         return filename

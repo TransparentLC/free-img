@@ -1,5 +1,3 @@
-import json
-
 from uploader import AbstractUploader
 
 class Uploader(AbstractUploader):
@@ -20,4 +18,4 @@ class Uploader(AbstractUploader):
     @property
     def parsed(self) -> str:
         # print('Hint: This upload server is used for test!')
-        return json.loads(self.request.text)['url']
+        return self.request.json()['url']

@@ -5,17 +5,17 @@ from uploader import AbstractUploader
 class Uploader(AbstractUploader):
     @property
     def request_url(self) -> str:
-        return 'https://maoyan.com/ajax/proxy/admin/mmdb/photos/upload.json'
+        return 'https://upload.aichat.net/upload/single'
 
     @property
     def file_key(self) -> str:
-        return 'file'
+        return 'single'
 
     @property
     def parsed(self) -> str:
-        return self.request.json()['data'][0]['olink'].replace('http://', 'https://')
+        return self.request.json()['url']
 
     def filename_rewrite(self, filename: str) -> str:
-        if os.path.splitext(filename.lower())[1] in {'.webp', '.avif'}:
+        if os.path.splitext(filename.lower())[1] not in {'.jpg', '.jpeg', '.gif', '.png', '.webp'}:
             filename += '.jpg'
         return filename
