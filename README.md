@@ -43,7 +43,6 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | ldmnq <sup>\*</sup> <sup>\*\*</sup> | [ldbbs.ldmnq.com](https://ldbbs.ldmnq.com/bbs/topic/attachment/2021-7/9287ebd6-df0b-428e-8a6f-703f328d3482.jpg) |
 | maoyan <sup>\*</sup> <sup>\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/mmdb/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | oppo | [cdofs.oppomobile.com](https://cdofs.oppomobile.com/cdo-portal/feedback/202107/16/9715e4b42dfc721dfa437bf597b834ce.jpg) |
-| sogou | [img*.sogoucdn.com](https://img01.sogoucdn.com/app/a/100520146/32d650f5ac7d08cb701789e98c5bdead) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
 | wenku | [wkphoto.cdn.bcebos.com](https://wkphoto.cdn.bcebos.com/fcfaaf51f3deb48fd81fbabce01f3a292df57859.jpg) |
 | yidianzixun <sup>\*</sup> | [si1.go2yd.com](https://si1.go2yd.com/get-image/0iFKu4YVCsK) |
