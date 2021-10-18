@@ -10,6 +10,4 @@ class Uploader:
 
     @staticmethod
     def server() -> list:
-        server_list = [os.path.splitext(x)[0] for x in os.listdir(os.path.dirname(__file__) + '/uploader') if os.path.splitext(x)[1].lower() == '.py']
-        server_list.remove('__init__')
-        return server_list
+        return tuple(os.path.splitext(x)[0] for x in os.listdir(os.path.dirname(__file__) + '/uploader') if os.path.splitext(x)[1].lower() == '.py' and x != '__init__.py')
