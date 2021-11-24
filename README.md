@@ -31,6 +31,7 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 
 | 名称 | 上传后的 URL |
 | --- | --- |
+| 7moor <sup>\*</sup> <sup>\*\*</sup> | [fs-im-kefu.7moor-fs2.com](https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/f-_gRKJY3BBbXnlp.jpg) |
 | aichat <sup>\*</sup> <sup>\*\*</sup> | [static.aichat.net](https://static.aichat.net/chat/202108/205d94f2-40e0-49db-b738-75e5d9d68653.jpg) |
 | alicdn <sup>\*</sup> <sup>\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
@@ -49,7 +50,6 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | yunque360 <sup>\*</sup> <sup>\*\*</sup> | [yunque-chat.oss.yunque360.com](https://yunque-chat.oss.yunque360.com/20210913/a1/cb/a1cba508fff22a915b3245d4be249352.jpg) |
 | yzf | [yzf.qq.com](https://yzf.qq.com/fsnb/kf-file/kf_pic/20200710/KFPIC_hF_WXIMAGE_MihOPneDLPHDtWHTTCdH.jpg) |
 | zhidao | [iknow-pic.cdn.bcebos.com](https://iknow-pic.cdn.bcebos.com/060828381f30e9242a16d04c5c086e061d95f719) |
-| zhiqiu  <sup>\*</sup> <sup>\*\*</sup> | [bj.bcebos.com](https://bj.bcebos.com/im-cs/32d650f5ac7d08cb701789e98c5bdead.jpg) |
 | ~~httpbin~~ | 仅用于测试 |
 
 > 测试用图片的出处：[Pixiv ID #72467059](https://www.pixiv.net/artworks/72467059)
