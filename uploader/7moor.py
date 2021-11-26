@@ -1,11 +1,10 @@
+import json
 import os
 import random
 import requests
 import secrets
-import json
 
 from uploader import AbstractUploader
-from urllib import parse
 
 class Uploader(AbstractUploader):
     def upload(self) -> str:
