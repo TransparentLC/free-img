@@ -21,7 +21,7 @@ class Uploader(AbstractUploader):
         return {
             'mid': 'fsnb',
             'media_type': 'image',
-            'userid': userid
+            'userid': userid,
         }
 
     @property
