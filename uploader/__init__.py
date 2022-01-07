@@ -2,6 +2,7 @@ import os
 import mimetypes
 import random
 import requests
+import secrets
 
 from abc import abstractmethod
 
@@ -35,7 +36,7 @@ class AbstractUploader:
         return {}
 
     def filename_rewrite(self, filename: str) -> str:
-        return filename
+        return secrets.token_urlsafe(12) + os.path.splitext(filename)[1]
 
     def upload(self) -> str:
         with open(self.path, 'rb') as f:

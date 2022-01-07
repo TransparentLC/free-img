@@ -8,8 +8,7 @@ from uploader import AbstractUploader
 
 class Uploader(AbstractUploader):
     def upload(self) -> str:
-        ext = os.path.splitext(self.path)[1][1:].lower()
-        upkey = f'im/2768a390-5474-11ea-afc9-7b323e3e16c0/{secrets.token_urlsafe(12)}.{ext}'
+        upkey = f'im/2768a390-5474-11ea-afc9-7b323e3e16c0/{self.filename_rewrite(self.path)}'
         r = requests.get(
             f'https://ykf-webchat.7moor.com/chat?data={json.dumps({"action": "qiniu.getUptokenFromCustomer", "key": upkey})}',
             headers={

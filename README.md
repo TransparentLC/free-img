@@ -33,19 +33,19 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | --- | --- |
 | 7moor <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [fs-im-kefu.7moor-fs2.com](https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/f-_gRKJY3BBbXnlp.jpg) |
 | aichat <sup>\*</sup> <sup>\*\*</sup> | [static.aichat.net](https://static.aichat.net/chat/202108/205d94f2-40e0-49db-b738-75e5d9d68653.jpg) |
-| alicdn <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
+| alicdn <sup>\*</sup> <sup>\*\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
 | baike <sup>\*\*\*</sup> | [bkimg.cdn.bcebos.com](https://bkimg.cdn.bcebos.com/pic/b3119313b07eca806538c935186a80dda144ac342585) |
 | dianping <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/csc/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | dingyue | [dingyue.ws.126.net](https://dingyue.ws.126.net/2020/1028/32d650f5j00qiw1ok001sd000go00gop.jpg) |
 | gtimg | [inews.gtimg.com](https://inews.gtimg.com/newsapp_ls/0/12067385341/0) |
+| huluxia <sup>\*</sup> <sup>\*\*</sup> | [cdn.u1.huluxia.com](https://cdn.u1.huluxia.com/g4/M02/47/5F/rBAAdmHX0luABJ2xAAEBNmol0kk907.jpg) |
 | imgurl <sup>\*</sup> | [ftp.bmp.ovh](https://ftp.bmp.ovh/imgs/2020/07/ac7d08cb701789e9.jpg) |
-| jd <sup>\*\*\*</sup> | [img*.360buyimg.com](https://img20.360buyimg.com/myjd/jfs/t1/128109/13/6838/65846/5f086444E1dc00680/b977b3bace25c778.jpg) |
 | jdimio <sup>\*</sup> <sup>\*\*\*</sup> | [dd-static.jd.com](https://dd-static.jd.com/ddimg/jfs/t1/206579/25/10622/65846/61a0cea0E0e326177/134260e170489c54.jpg) |
 | ldmnq <sup>\*</sup> <sup>\*\*</sup> | [ldbbs.ldmnq.com](https://ldbbs.ldmnq.com/bbs/topic/attachment/2021-7/9287ebd6-df0b-428e-8a6f-703f328d3482.jpg) |
 | maoyan <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/mmdb/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | mooc <sup>\*\*\*</sup> | [img*.mukewang.com](https://img4.mukewang.com/61a084f7000132d606000600.jpg) |
-| oppo | [cdofs.oppomobile.com](https://cdofs.oppomobile.com/cdo-portal/feedback/202107/16/9715e4b42dfc721dfa437bf597b834ce.jpg) |
+| oppo | [store.heytapimage.com](https://store.heytapimage.com/cdo-portal/feedback/202201/07/4488d074afb16bf7466f65995d1f63f6.jpg) |
 | tc58 <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [pic*.58cdn.com.cn](https://pic8.58cdn.com.cn/nowater/n_v20b417849f78a44caa8d1f3cb5e852a4b.jpg) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
 | xiaokefu | [oss-huadong1.oss-cn-hangzhou.aliyuncs.com](https://oss-huadong1.oss-cn-hangzhou.aliyuncs.com/wechatapp/customer_service/chat/free/2021/12/06/api_2021_12_06_12_56_002v45a.jpg) |
