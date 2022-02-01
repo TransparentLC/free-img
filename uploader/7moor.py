@@ -1,16 +1,16 @@
 import json
-import os
 import random
 import requests
-import secrets
 
 from uploader import AbstractUploader
 
 class Uploader(AbstractUploader):
     def upload(self) -> str:
         upkey = f'im/2768a390-5474-11ea-afc9-7b323e3e16c0/{self.filename_rewrite(self.path)}'
+        # upkey = f'im/ce3d5ef0-6836-11e6-85a2-2d5b0666fd02/{self.filename_rewrite(self.path)}'
         r = requests.get(
             f'https://ykf-webchat.7moor.com/chat?data={json.dumps({"action": "qiniu.getUptokenFromCustomer", "key": upkey})}',
+            # f'https://webchat.7moor.com/chat?data={json.dumps({"action": "qiniu.getUptokenFromCustomer", "key": upkey})}',
             headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
                 'X-Forwarded-For': '.'.join(str(random.randint(0, 255)) for x in range(4)),

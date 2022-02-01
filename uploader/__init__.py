@@ -36,7 +36,7 @@ class AbstractUploader:
         return {}
 
     def filename_rewrite(self, filename: str) -> str:
-        return secrets.token_urlsafe(12) + os.path.splitext(filename)[1]
+        return secrets.token_urlsafe(6) + os.path.splitext(filename)[1]
 
     def upload(self) -> str:
         with open(self.path, 'rb') as f:

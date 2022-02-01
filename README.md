@@ -48,8 +48,9 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | oppo | [store.heytapimage.com](https://store.heytapimage.com/cdo-portal/feedback/202201/07/4488d074afb16bf7466f65995d1f63f6.jpg) |
 | tc58 <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [pic*.58cdn.com.cn](https://pic8.58cdn.com.cn/nowater/n_v20b417849f78a44caa8d1f3cb5e852a4b.jpg) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
-| xiaokefu | [oss-huadong1.oss-cn-hangzhou.aliyuncs.com](https://oss-huadong1.oss-cn-hangzhou.aliyuncs.com/wechatapp/customer_service/chat/free/2021/12/06/api_2021_12_06_12_56_002v45a.jpg) |
+| vipkid <sup>\*</sup> <sup>\*\*\*</sup> | [media.vipkidstatic.com](https://media.vipkidstatic.com/mgt/uc-im-framework/1643728384688/sbY8mgsu.jpg) |
 | wenku | [wkphoto.cdn.bcebos.com](https://wkphoto.cdn.bcebos.com/fcfaaf51f3deb48fd81fbabce01f3a292df57859.jpg) |
+| xiaokefu | [oss-huadong1.oss-cn-hangzhou.aliyuncs.com](https://oss-huadong1.oss-cn-hangzhou.aliyuncs.com/wechatapp/customer_service/chat/free/2021/12/06/api_2021_12_06_12_56_002v45a.jpg) |
 | yidianzixun <sup>\*</sup> <sup>\*\*\*</sup> | [si1.go2yd.com](https://si1.go2yd.com/get-image/0iFKu4YVCsK) |
 | yunque360 <sup>\*</sup> <sup>\*\*</sup> | [yunque-chat.oss.yunque360.com](https://yunque-chat.oss.yunque360.com/20210913/a1/cb/a1cba508fff22a915b3245d4be249352.jpg) |
 | yzf | [yzf.qq.com](https://yzf.qq.com/fsnb/kf-file/kf_pic/20200710/KFPIC_hF_WXIMAGE_MihOPneDLPHDtWHTTCdH.jpg) |
