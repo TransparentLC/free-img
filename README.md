@@ -36,6 +36,7 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | alicdn <sup>\*</sup> <sup>\*\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
 | baike <sup>\*\*\*</sup> | [bkimg.cdn.bcebos.com](https://bkimg.cdn.bcebos.com/pic/b3119313b07eca806538c935186a80dda144ac342585) |
+| bcebos <sup>\*</sup> <sup>\*\*</sup> | [help-ol.bj.bcebos.com](https://help-ol.bj.bcebos.com/32d650f5ac7d08cb701789e98c5bdead.jpg) |
 | dianping <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [p0.meituan.net](https://p0.meituan.net/csc/32d650f5ac7d08cb701789e98c5bdead65846.jpg) |
 | dingyue | [dingyue.ws.126.net](https://dingyue.ws.126.net/2020/1028/32d650f5j00qiw1ok001sd000go00gop.jpg) |
 | gtimg | [inews.gtimg.com](https://inews.gtimg.com/newsapp_ls/0/12067385341/0) |
