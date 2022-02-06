@@ -6,8 +6,13 @@ from uploader import AbstractUploader
 
 class Uploader(AbstractUploader):
     def upload(self) -> str:
+        # upkey uuid:
+        # ykf-webchat
+        # 2768a390-5474-11ea-afc9-7b323e3e16c0
+        # webchat
+        # ce3d5ef0-6836-11e6-85a2-2d5b0666fd02
+        # 16055120-5ae4-11e7-a543-395dab8f672b
         upkey = f'im/2768a390-5474-11ea-afc9-7b323e3e16c0/{self.filename_rewrite(self.path)}'
-        # upkey = f'im/ce3d5ef0-6836-11e6-85a2-2d5b0666fd02/{self.filename_rewrite(self.path)}'
         r = requests.get(
             f'https://ykf-webchat.7moor.com/chat?data={json.dumps({"action": "qiniu.getUptokenFromCustomer", "key": upkey})}',
             # f'https://webchat.7moor.com/chat?data={json.dumps({"action": "qiniu.getUptokenFromCustomer", "key": upkey})}',
