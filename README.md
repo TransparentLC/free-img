@@ -41,6 +41,7 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | dingyue | [dingyue.ws.126.net](https://dingyue.ws.126.net/2020/1028/32d650f5j00qiw1ok001sd000go00gop.jpg) |
 | gtimg | [inews.gtimg.com](https://inews.gtimg.com/newsapp_ls/0/12067385341/0) |
 | huluxia <sup>\*</sup> <sup>\*\*</sup> | [cdn.u1.huluxia.com](https://cdn.u1.huluxia.com/g4/M02/47/5F/rBAAdmHX0luABJ2xAAEBNmol0kk907.jpg) |
+| imcc | [uccfile.im-cc.com](https://uccfile.im-cc.com/download/temp/20220312/1647054897_7713_2ac1c8cc_3247_4771_9163_fddf6be74803.jpg) |
 | imgurl <sup>\*</sup> | [ftp.bmp.ovh](https://ftp.bmp.ovh/imgs/2020/07/ac7d08cb701789e9.jpg) |
 | jdimio <sup>\*</sup> <sup>\*\*\*</sup> | [dd-static.jd.com](https://dd-static.jd.com/ddimg/jfs/t1/206579/25/10622/65846/61a0cea0E0e326177/134260e170489c54.jpg) |
 | ldmnq <sup>\*</sup> <sup>\*\*</sup> | [ldbbs.ldmnq.com](https://ldbbs.ldmnq.com/bbs/topic/attachment/2021-7/9287ebd6-df0b-428e-8a6f-703f328d3482.jpg) |
