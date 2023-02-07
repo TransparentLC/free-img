@@ -49,6 +49,7 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | meiqia | [legacy-pics.meiqiausercontent.com](https://legacy-pics.meiqiausercontent.com/images/jpl4HJCK/HXa0/22jiNJSsOmDFaqD1cUBc.jpg) |
 | mooc <sup>\*\*\*</sup> | [img*.mukewang.com](https://img4.mukewang.com/61a084f7000132d606000600.jpg) |
 | oppo | [store.heytapimage.com](https://store.heytapimage.com/cdo-portal/feedback/202201/07/4488d074afb16bf7466f65995d1f63f6.jpg) |
+| sohu <sup>\*\*\*</sup> | [cy-pic.kuaizhan.com](https://cy-pic.kuaizhan.com/g3/21/ec/1e03-c437-498e-a4e8-5dd15060782e89?cysign=3ae4d1f71dfb8d699c8ed01c58b0b8e8&cyt=1675740571) |
 | tc58 <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [pic*.58cdn.com.cn](https://pic8.58cdn.com.cn/nowater/n_v20b417849f78a44caa8d1f3cb5e852a4b.jpg) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
 | vipkid <sup>\*</sup> <sup>\*\*\*</sup> | [media.vipkidstatic.com](https://media.vipkidstatic.com/mgt/uc-im-framework/1643728384688/sbY8mgsu.jpg) |
