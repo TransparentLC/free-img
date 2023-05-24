@@ -31,7 +31,7 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 
 | 名称 | 上传后的 URL |
 | --- | --- |
-| 7moor <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [fs-im-kefu.7moor-fs2.com](https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/f-_gRKJY3BBbXnlp.jpg) |
+| 7moor <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [cc-im-kefu-cos.7moor-fs1.com](https://cc-im-kefu-cos.7moor-fs1.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/yZuukuJT.jpg) |
 | aichat <sup>\*</sup> <sup>\*\*</sup> | [static.aichat.net](https://static.aichat.net/chat/202108/205d94f2-40e0-49db-b738-75e5d9d68653.jpg) |
 | alicdn <sup>\*</sup> <sup>\*\*\*</sup> | [ae01.alicdn.com](https://ae01.alicdn.com/kf/Ue6091d8f8ab344e0b2f6726d22e2d6c9x.jpg) |
 | baijiahao | [pic.rmb.bdstatic.com](https://pic.rmb.bdstatic.com/bjh/32d650f5ac7d08cb701789e98c5bdead.jpeg) |
@@ -52,10 +52,11 @@ image.jpg -> ![image.jpg](https://p.pstatp.com/origin/fe960003179ab14c66f8)
 | sohu <sup>\*\*\*</sup> | [cy-pic.kuaizhan.com](https://cy-pic.kuaizhan.com/g3/21/ec/1e03-c437-498e-a4e8-5dd15060782e89?cysign=3ae4d1f71dfb8d699c8ed01c58b0b8e8&cyt=1675740571) |
 | tc58 <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [pic*.58cdn.com.cn](https://pic8.58cdn.com.cn/nowater/n_v20b417849f78a44caa8d1f3cb5e852a4b.jpg) |
 | uploadcc | [upload.cc](https://upload.cc/i1/2020/07/25/p5TNES.jpg) |
-| vipkid <sup>\*</sup> <sup>\*\*</sup> <sup>\*\*\*</sup> | [img.vipkidstatic.com](https://img.vipkidstatic.com/int/im/kr/9504f82c-fda5-4027-a5a7-42e551d483e3.jpg) |
+| vipkid <sup>\*\*\*</sup> | [img.vipkidstatic.com](https://img.vipkidstatic.com/int/im/kr/9504f82c-fda5-4027-a5a7-42e551d483e3.jpg) |
 | wenku | [wkphoto.cdn.bcebos.com](https://wkphoto.cdn.bcebos.com/fcfaaf51f3deb48fd81fbabce01f3a292df57859.jpg) |
 | xiaokefu | [oss-huadong1.oss-cn-hangzhou.aliyuncs.com](https://oss-huadong1.oss-cn-hangzhou.aliyuncs.com/wechatapp/customer_service/chat/free/2021/12/06/api_2021_12_06_12_56_002v45a.jpg) |
 | yidianzixun <sup>\*</sup> <sup>\*\*\*</sup> | [si1.go2yd.com](https://si1.go2yd.com/get-image/0iFKu4YVCsK) |
+| yingyu <sup>\*</sup> <sup>\*\*</sup> | [img.yingyuchat.com](https://img.yingyuchat.com/img/2023March/AM_SV1h4/2023March/e9def3393b1f3e2da67b38f3d11aeff6.jpg) |
 | yunque360 <sup>\*</sup> <sup>\*\*</sup> | [yunque-chat.oss.yunque360.com](https://yunque-chat.oss.yunque360.com/20210913/a1/cb/a1cba508fff22a915b3245d4be249352.jpg) |
 | yzf | [yzf.qq.com](https://yzf.qq.com/fsnb/kf-file/kf_pic/20200710/KFPIC_hF_WXIMAGE_MihOPneDLPHDtWHTTCdH.jpg) |
 | zhidao | [iknow-pic.cdn.bcebos.com](https://iknow-pic.cdn.bcebos.com/060828381f30e9242a16d04c5c086e061d95f719) |
