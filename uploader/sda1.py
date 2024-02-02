@@ -13,7 +13,6 @@ class Uploader(AbstractUploader):
     def upload(self) -> str:
         s = requests.Session()
         s.hooks['response'].append(lambda r, *args, **kwargs: r.raise_for_status())
-        r = s.get('https://p.sda1.dev/assets/css/thumb.css')
 
         filename = os.path.basename(self.path)
         if os.path.splitext(filename.lower())[1] not in {'.jpg', '.jpeg', '.gif', '.png', '.webp'}:
@@ -21,9 +20,8 @@ class Uploader(AbstractUploader):
         filename = self.filename_rewrite(filename)
 
         r = s.post(
-            f'https://p.sda1.dev/api_dup{random.randint(0, 9)}/v1/upload_noform',
+            'https://p.sda1.dev/api/v1/upload_external_noform',
             params={
-                'batch_size': 1,
                 'filename': filename,
             },
             data=streamUpload(self.path),

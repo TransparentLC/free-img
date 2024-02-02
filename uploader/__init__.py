@@ -9,6 +9,9 @@ from abc import abstractmethod
 mimetypes.add_type('image/avif', '.avif')
 
 class AbstractUploader:
+    path: str
+    request: requests.Request
+
     def __init__(self, path: str) -> str:
         self.path = path
         self.request = None
