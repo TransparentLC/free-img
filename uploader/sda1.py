@@ -15,7 +15,7 @@ class Uploader(AbstractUploader):
         s.hooks['response'].append(lambda r, *args, **kwargs: r.raise_for_status())
 
         filename = os.path.basename(self.path)
-        if os.path.splitext(filename.lower())[1] not in {'.jpg', '.jpeg', '.gif', '.png', '.webp'}:
+        if os.path.splitext(filename.lower())[1] not in {'.jpg', '.jpeg', '.gif', '.png', '.webp', '.svg'}:
             filename += '.jpg'
         filename = self.filename_rewrite(filename)
 
@@ -29,4 +29,4 @@ class Uploader(AbstractUploader):
         resp = r.json()
         if not resp['success']:
             raise RuntimeError('Failed to upload')
-        return resp['data']['url']
+        return os.path.split(resp['data']['url'])[0]
