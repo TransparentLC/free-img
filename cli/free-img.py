@@ -4,7 +4,10 @@ import argparse
 import glob
 import itertools
 import os
+import requests
+import subprocess
 import sys
+import tempfile
 import typing
 from concurrent.futures import ThreadPoolExecutor
 
@@ -12,14 +15,30 @@ sys.path.append(os.path.realpath(os.path.dirname(__file__) + '/..'))
 
 from __init__ import Uploader
 
+s = requests.Session()
+
 def upload(file: str, formatter: typing.Callable[[str, str], str], server: str, raw: bool, max_length: int):
     name = os.path.basename(file)
+    temp = None
 
     try:
-        url = Uploader.get(server, file).upload()
+        if file.startswith('http://') or file.startswith('https://'):
+            with open(temp := tempfile.mktemp(os.path.splitext(name)[1]), 'wb') as f:
+                r = s.get(file, stream=True)
+                for d in r.iter_content(None):
+                    f.write(d)
+            # match os.path.splitext(temp)[1]:
+            #     case '.png':
+            #         subprocess.run(('oxipng', '-o', 'max', '-v', '-v', temp)).check_returncode()
+            #     case '.jpg':
+            #         subprocess.run(('jpegtran-static', '-copy', 'none', '-optimize', '-progressive', '-outfile', temp, temp)).check_returncode()
+        url = Uploader.get(server, temp or file).upload()
         result = formatter(url, name)
     except Exception as ex:
         result = f'\033[91m{type(ex).__name__}\033[39m \033[93m{ex}\033[39m'
+    finally:
+        if temp is not None and os.path.exists(temp):
+            os.remove(temp)
 
     if not raw:
         result = f'\r{name.ljust(max_length)} -> \033[92m{result}\033[39m'
